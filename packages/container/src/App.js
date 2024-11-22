@@ -2,7 +2,7 @@ import React from "react";
 import MarketingApp from "./components/MarketingApp";
 
 export default () => {
-  console.log("hello croco!");
+  console.log("small changes to test workflow");
 
   return (
     <div>
