@@ -2,17 +2,18 @@ name: container-deploy
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
+    paths: ["packages/container/**"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
+
+defaults:
+  run:
+    working-directory: packages/container
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
 
     steps:
       - uses: actions/checkout@v2
