@@ -2,13 +2,12 @@ name: deploy-container
 
 on:
   push:
-    branches: [master]
-    paths:
-      - "/**"
+    branches:
+      - master
 
 defaults:
   run:
-    working-directory: packages/container
+    working-directory: ./
 
 jobs:
   build:
