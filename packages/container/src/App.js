@@ -2,7 +2,7 @@ import React from "react";
 import MarketingApp from "./components/MarketingApp";
 
 export default () => {
-  console.log("small changes to test workflow");
+  console.log("added logs to change the workflow");
 
   return (
     <div>
