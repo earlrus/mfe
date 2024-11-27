@@ -20,6 +20,8 @@ export default ({ history, checkSignIn }) => {
     setSignin(true);
     checkSignIn(true);
   }
+  console.log("log from auth");
+
   return (
     <div>
       <StylesProvider generateClassName={generateClassName}>
