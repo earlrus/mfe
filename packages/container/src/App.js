@@ -18,6 +18,7 @@ export default () => {
   function onSignOut() {
     setSignin(false);
   }
+  console.log("hey!!!");
 
   return (
     <BrowserRouter>
